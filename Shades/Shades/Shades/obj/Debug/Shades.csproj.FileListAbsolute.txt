@@ -1,0 +1,10 @@
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\bin\Debug\Shades.exe.config
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\bin\Debug\Shades.exe
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\bin\Debug\Shades.pdb
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.csprojResolveAssemblyReference.cache
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.Form1.resources
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.Properties.Resources.resources
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.csproj.GenerateResource.Cache
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.csproj.CoreCompileInputs.cache
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.exe
+E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.pdb

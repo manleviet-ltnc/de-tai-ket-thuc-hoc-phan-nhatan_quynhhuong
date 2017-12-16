@@ -10,21 +10,71 @@ using System.Windows.Forms;
 
 namespace Shades
 {
-    public partial class Form1 : Form
+    public partial class Shades : Form
     {
-        public Form1()
+        enum Position
         {
-            InitializeComponent();
+            Left, Right, Up, Down
         }
 
-        private void btnMau_Click(object sender, EventArgs e)
+        private int _x;
+        private int _y;
+        private Position _objPosition;
+
+        public Shades()
         {
-            //khởi tạo 1 đối tượng của class ColorDialog
-            ColorDialog colorDialog = new ColorDialog();
-            if (colorDialog.ShowDialog() == DialogResult.OK)
+            InitializeComponent();
+
+            _x = 0;
+            _y = 0;
+            _objPosition = Position.Down;
+        }
+
+        private void Shades_Paint(object sender, PaintEventArgs e)
+        {
+            e.Graphics.FillRectangle(Brushes.Red, _x, _y, 70, 50);
+        }
+
+        private void tmrMoving_Tick(object sender, EventArgs e)
+        {
+            if (_objPosition == Position.Left)
             {
-                //thiết lập màu nền của textbox1 là màu đã chọn
-                button1.BackColor = colorDialog.Color;
+                _x += 10;
+            }
+            else if (_objPosition == Position.Right)
+            {
+                _x += 10;
+            }
+            else if (_objPosition == Position.Up)
+            {
+                _y += 10;
+            }
+            else if (_objPosition == Position.Down)
+            {
+                _y += 10;
+            }
+
+            Invalidate();
+        }
+
+        private void Shades_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Left)
+            {
+                _objPosition = Position.Left;
+            }
+            else if (e.KeyCode == Keys.Right)
+            {
+                _objPosition = Position.Right;
+            }
+            else if (e.KeyCode == Keys.Up)
+            {
+                _objPosition = Position.Up;
+            }
+            else if (e.KeyCode == Keys.Down)
+            {
+                _objPosition = Position.Down;
+
             }
         }
     }

@@ -25,33 +25,36 @@ namespace Shades
         {
             InitializeComponent();
 
-            _x = 0;
-            _y = 0;
+            _x = 50;
+            _y = 50;
             _objPosition = Position.Down;
         }
 
         private void Shades_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.FillRectangle(Brushes.Red, _x, _y, 70, 50);
+           
+                
         }
 
         private void tmrMoving_Tick(object sender, EventArgs e)
         {
             if (_objPosition == Position.Left)
             {
-                _x += 10;
+                _x -= 5;
+
             }
             else if (_objPosition == Position.Right)
             {
-                _x += 10;
+                _x += 5;
             }
             else if (_objPosition == Position.Up)
             {
-                _y += 10;
+                _y -= 5;
             }
             else if (_objPosition == Position.Down)
             {
-                _y += 10;
+                _y += 5;
             }
 
             Invalidate();
@@ -76,6 +79,9 @@ namespace Shades
                 _objPosition = Position.Down;
 
             }
+
         }
+      
+        
     }
 }

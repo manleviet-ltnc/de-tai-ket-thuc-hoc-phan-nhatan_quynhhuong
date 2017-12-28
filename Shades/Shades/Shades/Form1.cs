@@ -84,9 +84,12 @@ namespace Shades
                         else
                             chamday = true;
                     }
-                    KT();
+                    Invalidate();
+                    
                 }
+                Invalidate();
             }
+            
         }
 
         private void KT()
@@ -97,7 +100,7 @@ namespace Shades
                     DayHangXuong(i);
 
             //for (int j =0; j < Cols; j++)
-
+            Invalidate();
         }
 
         private void DayHangXuong(int i)
@@ -108,6 +111,7 @@ namespace Shades
                     A[k, j] = A[k - 1, j];
             for (int j = 0; j < So_Cot; j++)
                 A[0, j] = 0;
+            Invalidate();
         }
 
         private bool KTHang(int i)
@@ -119,6 +123,7 @@ namespace Shades
                 if (A[i, j] != tam)
                     return false;
             return true;
+            
         }
 
         public int Them0()
@@ -129,6 +134,7 @@ namespace Shades
 
             A[0, j] = 1;
             return j;
+            
         }
 
         private void Draw()
@@ -137,6 +143,7 @@ namespace Shades
             {
                 for (int j = 0; j < So_Cot; j++) ;
             }
+            Invalidate();
         }
 
 
@@ -165,7 +172,7 @@ namespace Shades
                 _y += 5;
             }
 
-            //Invalidate();
+            Invalidate();
         }
 
         private void Shades_KeyDown(object sender, KeyEventArgs e)
@@ -188,7 +195,7 @@ namespace Shades
                 _objPosition = Position.Down;
 
             }
-
+            Invalidate();
         }
 
 

@@ -5,3 +5,10 @@ E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\o
 E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\obj\Debug\ControlColor.exe
 E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\obj\Debug\ControlColor.pdb
 E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\obj\Debug\ControlColor.csprojResolveAssemblyReference.cache
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\bin\Debug\ControlColor.exe.config
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\bin\Debug\ControlColor.exe
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\bin\Debug\ControlColor.pdb
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\obj\Debug\ControlColor.csprojResolveAssemblyReference.cache
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\obj\Debug\ControlColor.csproj.CoreCompileInputs.cache
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\obj\Debug\ControlColor.exe
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\ControlColor\ControlColor\obj\Debug\ControlColor.pdb

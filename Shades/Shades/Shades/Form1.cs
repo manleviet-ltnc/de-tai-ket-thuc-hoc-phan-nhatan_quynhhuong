@@ -69,17 +69,17 @@ namespace Shades
         {
             //e.Graphics.FillRectangle(Brushes.Red, _x, _y, 70, 50);
 
-            Color color = Color.Gray;
+            Color color = Color.Black;
             for (int i = 0; i < So_Hang; i++)
             {
                 for (int j = 0; j < So_Cot; j++)
                 {
                     switch (A[i, j].Text)
                     {
-                        case "0": color = Color.Gray; break;
-                        case "1": color = Color.Yellow; break;
+                        case "0": color = Color.Black; break;
+                        case "1": color = Color.LightGreen; break;
                         case "2": color = Color.Green;break;
-                        case "4": color = Color.Red;break;
+                        case "4": color = Color.DarkGreen;break;
                     }
                     A[i, j].BackColor = color;
                 }

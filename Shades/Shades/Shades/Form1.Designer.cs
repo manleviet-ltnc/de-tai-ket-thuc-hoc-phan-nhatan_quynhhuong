@@ -51,6 +51,11 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblDiem = new System.Windows.Forms.Label();
+            this.lstTen = new System.Windows.Forms.ListBox();
+            this.lstDiem = new System.Windows.Forms.ListBox();
+            this.lblXepHang = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -238,11 +243,81 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblDiem
+            // 
+            this.lblDiem.Location = new System.Drawing.Point(92, 3);
+            this.lblDiem.Name = "lblDiem";
+            this.lblDiem.Size = new System.Drawing.Size(77, 22);
+            this.lblDiem.TabIndex = 20;
+            this.lblDiem.Text = "0000";
+            this.lblDiem.Click += new System.EventHandler(this.lblDiem_Click);
+            // 
+            // lstTen
+            // 
+            this.lstTen.FormattingEnabled = true;
+            this.lstTen.Items.AddRange(new object[] {
+            "Sam",
+            "Alex",
+            "Clover",
+            "John",
+            "Jack",
+            "Mickey",
+            "JK",
+            "Anna",
+            "Shophia",
+            "Smith"});
+            this.lstTen.Location = new System.Drawing.Point(281, 33);
+            this.lstTen.Name = "lstTen";
+            this.lstTen.Size = new System.Drawing.Size(58, 160);
+            this.lstTen.TabIndex = 22;
+            // 
+            // lstDiem
+            // 
+            this.lstDiem.FormattingEnabled = true;
+            this.lstDiem.Items.AddRange(new object[] {
+            "100",
+            "70",
+            "68",
+            "56",
+            "54",
+            "48",
+            "46",
+            "38",
+            "32",
+            "30"});
+            this.lstDiem.Location = new System.Drawing.Point(345, 33);
+            this.lstDiem.Name = "lstDiem";
+            this.lstDiem.Size = new System.Drawing.Size(58, 160);
+            this.lstDiem.TabIndex = 23;
+            // 
+            // lblXepHang
+            // 
+            this.lblXepHang.Location = new System.Drawing.Point(322, 7);
+            this.lblXepHang.Name = "lblXepHang";
+            this.lblXepHang.Size = new System.Drawing.Size(53, 23);
+            this.lblXepHang.TabIndex = 24;
+            this.lblXepHang.Text = "TOP 10";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(12, 3);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(31, 13);
+            this.label21.TabIndex = 25;
+            this.label21.Text = "Điểm";
+            // 
             // Shades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(438, 231);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.lblXepHang);
+            this.Controls.Add(this.lstDiem);
+            this.Controls.Add(this.lstTen);
+            this.Controls.Add(this.lblDiem);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
@@ -269,6 +344,7 @@
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Shades_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Shades_KeyDown);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -296,6 +372,11 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblDiem;
+        private System.Windows.Forms.ListBox lstTen;
+        private System.Windows.Forms.ListBox lstDiem;
+        private System.Windows.Forms.Label lblXepHang;
+        private System.Windows.Forms.Label label21;
     }
 }
 

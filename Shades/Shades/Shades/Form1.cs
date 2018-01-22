@@ -131,9 +131,14 @@ namespace Shades
             
         }
 
+        private void lblDiem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         //private void Draw()
         //{
-            
+
         //    Invalidate();
         //}
 

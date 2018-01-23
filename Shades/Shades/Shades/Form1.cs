@@ -17,6 +17,7 @@ namespace Shades
         private bool chamday = true;
         public int cot = -1;
         public int hang = 0;
+        public int diem = 0;
 
         Label[,] A = new Label[5, 4];
 
@@ -29,7 +30,7 @@ namespace Shades
         //private int _x;
         //private int _y;
         //private Position _objPosition;
-
+         
         public Shades()
         {
             InitializeComponent();
@@ -95,10 +96,19 @@ namespace Shades
         {
             for (int i = So_Hang - 1; i >= 0; i--)
                 if (KTHang(i))
+                {
                     // day cac hang tren xuong
                     DayHangXuong(i);
+                    diem += 10;
+                    HienThiDiem();
+                }
 
             //for (int j =0; j < Cols; j++)
+        }
+
+        private void HienThiDiem()
+        {
+            lblDiem.Text = "" + diem;
         }
 
         private void DayHangXuong(int i)
@@ -134,6 +144,12 @@ namespace Shades
         private void lblDiem_Click(object sender, EventArgs e)
         {
             
+            
+        }
+
+        private void Shades_Load_1(object sender, EventArgs e)
+        {
+
         }
 
         //private void Draw()
@@ -211,25 +227,14 @@ namespace Shades
 
         private void Shades_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.KeyCode == Keys.Left)
-            //{
-            //    _objPosition = Position.Left;
-            //}
-            //else if (e.KeyCode == Keys.Right)
-            //{
-            //    _objPosition = Position.Right;
-            //}
-
-            //else if (e.KeyCode == Keys.Up)
-            //{
-            //    _objPosition = Position.Up;
-            //}
-            //else if (e.KeyCode == Keys.Down)
-            //{
-            //    _objPosition = Position.Down;
-
-            //}
-            //Invalidate();
+            if (e.KeyCode == Keys.Left)
+            {
+                cot -= 1;
+            }
+            else if (e.KeyCode == Keys.Right)
+            {
+                cot += 1;
+            }
         }
 
 

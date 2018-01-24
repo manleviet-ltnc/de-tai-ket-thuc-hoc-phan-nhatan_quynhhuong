@@ -53,6 +53,9 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblDiem = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.bảngXếpHạngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -242,21 +245,36 @@
             // 
             // lblDiem
             // 
-            this.lblDiem.Location = new System.Drawing.Point(92, 3);
+            this.lblDiem.Location = new System.Drawing.Point(184, 11);
             this.lblDiem.Name = "lblDiem";
             this.lblDiem.Size = new System.Drawing.Size(77, 22);
             this.lblDiem.TabIndex = 20;
             this.lblDiem.Text = " 0000";
-            this.lblDiem.Click += new System.EventHandler(this.lblDiem_Click);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(12, 3);
+            this.label21.Location = new System.Drawing.Point(129, 9);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(31, 13);
             this.label21.TabIndex = 25;
             this.label21.Text = "Điểm";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bảngXếpHạngToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(273, 24);
+            this.menuStrip1.TabIndex = 26;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // bảngXếpHạngToolStripMenuItem
+            // 
+            this.bảngXếpHạngToolStripMenuItem.Name = "bảngXếpHạngToolStripMenuItem";
+            this.bảngXếpHạngToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.bảngXếpHạngToolStripMenuItem.Text = "Bảng xếp hạng";
             // 
             // Shades
             // 
@@ -286,13 +304,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Shades";
             this.Text = "Shades";
-            this.Load += new System.EventHandler(this.Shades_Load_1);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Shades_Paint);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Shades_KeyDown);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,6 +345,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblDiem;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem bảngXếpHạngToolStripMenuItem;
     }
 }
 

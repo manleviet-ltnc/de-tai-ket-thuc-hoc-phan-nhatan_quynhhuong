@@ -38,3 +38,4 @@ E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_qu
 E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.csproj.CoreCompileInputs.cache
 E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.exe
 E:\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.pdb
+D:\github\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\de-tai-ket-thuc-hoc-phan-nhatan_quynhhuong\Shades\Shades\Shades\obj\Debug\Shades.frmBang_Xep_Hang.resources

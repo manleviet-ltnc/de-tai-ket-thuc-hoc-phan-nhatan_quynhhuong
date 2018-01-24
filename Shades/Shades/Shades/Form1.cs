@@ -12,32 +12,18 @@ namespace Shades
 {
     public partial class Shades : Form
     {
-        public int So_Hang = 5, So_Cot = 4, Kich_Thuoc = 60;
+        public int So_Hang = 5, So_Cot = 4;
         private Random roi = new Random();
         private bool chamday = true;
-        public int cot = -1;
+        private int cot = -1;
         public int hang = 0;
         public int diem = 0;
 
         Label[,] A = new Label[5, 4];
-
-
-        //enum Position
-        //{
-        //    Left, Right, Up, Down
-        //}
-
-        //private int _x;
-        //private int _y;
-        //private Position _objPosition;
          
         public Shades()
         {
             InitializeComponent();
-
-            //_x = 50;
-            //_y = 50;
-            //_objPosition = Position.Down;
 
             A[0, 0] = label1;
             A[0, 1] = label2;
@@ -68,7 +54,6 @@ namespace Shades
 
         private void Shades_Paint(object sender, PaintEventArgs e)
         {
-            //e.Graphics.FillRectangle(Brushes.Red, _x, _y, 70, 50);
 
             Color color = Color.Black;
             for (int i = 0; i < So_Hang; i++)
@@ -87,11 +72,6 @@ namespace Shades
             }
         }
 
-        private void Shades_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void KT()
         {
             for (int i = So_Hang - 1; i >= 0; i--)
@@ -102,8 +82,6 @@ namespace Shades
                     diem += 10;
                     HienThiDiem();
                 }
-
-            //for (int j =0; j < Cols; j++)
         }
 
         private void HienThiDiem()
@@ -141,22 +119,6 @@ namespace Shades
             
         }
 
-        private void lblDiem_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void Shades_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        //private void Draw()
-        //{
-
-        //    Invalidate();
-        //}
 
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -196,44 +158,18 @@ namespace Shades
             KT();
             Invalidate();
         }
-
-        //private void tmrMoving_Tick(object sender, EventArgs e)
-        //{
-        //    if (_objPosition == Position.Left)
-        //    {
-
-        //        _x -= 10;
-
-        //        _x -= 5;
-
-        //    }
-        //    else if (_objPosition == Position.Right)
-        //    {
-        //        _x += 5;
-        //    }
-
-
-        //    else if (_objPosition == Position.Up)
-        //    {
-        //        _y -= 5;
-        //    }
-        //    else if (_objPosition == Position.Down)
-        //    {
-        //        _y += 5;
-        //    }
-
-        //    Invalidate();
-        //}
+        
 
         private void Shades_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Left)
             {
-                cot -= 1;
-            }
-            else if (e.KeyCode == Keys.Right)
-            {
                 cot += 1;
+                
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                cot -= 1;
             }
         }
 
